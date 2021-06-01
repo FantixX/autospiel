@@ -4,7 +4,6 @@ Außerdem wird die Zeit gestoppt.
 @author Luis Abeler 
 @version 1.0 
  **/
- //pushtest
 public class Main {
     Autospiel spiel;
     Stoppuhr timer;
