@@ -52,6 +52,7 @@ public class Autospiel {
         //Wartet auf Enter, um zu starten
         while (!tastatur.enter()) {
             Sys.warte(10); }
+        //Countdown
         for (int i = 5; i>0; i = i-1) {
             tafel2.setzeText("Start in " + i,40);
             Sys.warte(1000);
@@ -60,6 +61,7 @@ public class Autospiel {
         tafel2.loesche();
         tafel3.loesche();
         tafel4.loesche();
+        //Ausgangsposition
         kamera.setzePosition(200,1000,1500);
         kamera.setzeBlickpunkt(auto.karosserie.gibPosition());    
     }

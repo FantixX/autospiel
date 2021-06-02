@@ -10,15 +10,19 @@ public class Baum
     GLKugel krone;
     Auto kenntAuto;
     int stammR;
+    double stammH;
+    double kroneR;
     public Baum(Auto pAuto)
     {
        //Erzeugt Baum mit zufälligen Attributen und macht ihn mit dem Auto bekannt
        kenntAuto = pAuto;
-       stammR = ThreadLocalRandom.current().nextInt(100, 125 + 1);
-       stamm = new GLZylinder(ThreadLocalRandom.current().nextInt(-10000, 10000 + 1),50,ThreadLocalRandom.current().nextInt(-35000, -1000 + 1),stammR,ThreadLocalRandom.current().nextInt(600, 800 + 1));
+       stammH = ThreadLocalRandom.current().nextInt(900, 1900 + 1);
+       stammR = ThreadLocalRandom.current().nextInt(110, 150 + 1);
+       stamm = new GLZylinder(ThreadLocalRandom.current().nextInt(-10000, 10000 + 1),0,ThreadLocalRandom.current().nextInt(-35000, -1000 + 1),stammR,stammH);
        stamm.drehe(90,0,0);
+       kroneR = ThreadLocalRandom.current().nextInt(440, 600 + 1);
        stamm.setzeTextur("stamm.jpg");
-       krone = new GLKugel(stamm.gibX(),600,stamm.gibZ(),ThreadLocalRandom.current().nextInt(300, 425 + 1));
+       krone = new GLKugel(stamm.gibX(),stammH/2+kroneR/2,stamm.gibZ(),kroneR);
        krone.setzeTextur("blaetter.jpg");
     }
     public void kollision() {

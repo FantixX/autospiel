@@ -25,17 +25,17 @@ public class Auto {
         karosserie3.setzeTextur("chrom.jpg");
         karosserie4.setzeTextur("chrom.jpg"); 
         rad1 = new GLZylinder(posX+260/2, posY-150/2, posZ+400/2, 125/2,100/2);
-        rad1.setzeTextur("reifen.png");
+        rad1.setzeTextur("reifen.jpg");
         rad1.drehe(0,90,0);
         rad2 = new GLZylinder(posX-260/2, posY-150/2, posZ+400/2, 125/2,100/2);
         rad2.drehe(0,90,0);
-        rad2.setzeTextur("reifen.png");
+        rad2.setzeTextur("reifen.jpg");
         rad3 = new GLZylinder(posX+260/2, posY-150/2, posZ-400/2, 125/2,100/2);
         rad3.drehe(0,90,0);
-        rad3.setzeTextur("reifen.png");
+        rad3.setzeTextur("reifen.jpg");
         rad4 = new GLZylinder(posX-260/2, posY-150/2, posZ-400/2, 125/2,100/2);
         rad4.drehe(0,90,0);
-        rad4.setzeTextur("reifen.png");
+        rad4.setzeTextur("reifen.jpg");
     }
     /** Vorwärtsbewegung des Autos**/
     public void fahren(double geschw) {
