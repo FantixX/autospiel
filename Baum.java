@@ -18,7 +18,7 @@ public class Baum
        stamm = new GLZylinder(ThreadLocalRandom.current().nextInt(-10000, 10000 + 1),50,ThreadLocalRandom.current().nextInt(-35000, -1000 + 1),stammR,ThreadLocalRandom.current().nextInt(600, 800 + 1));
        stamm.drehe(90,0,0);
        stamm.setzeTextur("stamm.jpg");
-       krone = new GLKugel(stamm.gibX(),600,stamm.gibZ(),ThreadLocalRandom.current().nextInt(275, 425 + 1));
+       krone = new GLKugel(stamm.gibX(),600,stamm.gibZ(),ThreadLocalRandom.current().nextInt(300, 425 + 1));
        krone.setzeTextur("blaetter.jpg");
     }
     public void kollision() {
@@ -27,7 +27,7 @@ public class Baum
                 Math.pow(stamm.gibX()-kenntAuto.karosserie.gibX(),2)+
                 Math.pow(stamm.gibY()-kenntAuto.karosserie.gibY(),2)+
                 Math.pow(stamm.gibZ()-kenntAuto.karosserie.gibZ(),2));        
-        if (lDist<150+stammR || kenntAuto.karosserie.gibX() < -10500 || kenntAuto.karosserie.gibX() > 10500 || kenntAuto.karosserie.gibZ() > 2000){
+        if (lDist<175+stammR || kenntAuto.karosserie.gibX() < -10500 || kenntAuto.karosserie.gibX() > 10500 || kenntAuto.karosserie.gibZ() > 2000){
             kenntAuto.crash(); }               
     }
     

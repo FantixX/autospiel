@@ -3,7 +3,6 @@ import GLOOP.*;
 erstellt die Schleife zur Tastaturabfrage zur Steuerung und Kollisionsabfrage
 @author Luis Abeler
 @version V1 **/
-//Penis lol
 public class Autospiel {
     GLKamera kamera;
     GLLicht licht;
