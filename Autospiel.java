@@ -111,16 +111,16 @@ public class Autospiel {
                 Sys.warte(1); }
             //Änderung der Geschwindigkeit    
             if (tastatur.istGedrueckt('1')) {
-                geschwindigkeit = 0.3;
+                geschwindigkeit = 0.6;
                 Sys.warte(1); }  
             if (tastatur.istGedrueckt('2')) {
-                geschwindigkeit = 0.9;
+                geschwindigkeit = 1.5;
                 Sys.warte(1); }
             if (tastatur.istGedrueckt('3')) {
-                geschwindigkeit = 1.4;
+                geschwindigkeit = 1.9;
                 Sys.warte(1); }
             if (tastatur.istGedrueckt('4')) {
-                geschwindigkeit = 2;
+                geschwindigkeit = 2.7;
                 Sys.warte(1); }
             //Erneute Abfrage der Perspektive, dadurch flüssigerer Abflauf     
             if (tps == false) {
