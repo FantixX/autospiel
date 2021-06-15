@@ -15,7 +15,6 @@ public class Main {
         timer.stopp();
         timer.zeit();  
         Sys.warte(5000);
-        Sys.beenden();
-        
+        Sys.beenden();        
     }
 }
