@@ -9,8 +9,6 @@ public class Autospiel {
     GLBoden boden;
     GLHimmel himmel;
     Ziellinie ziel;
-    Baum baum1, baum2, baum3, baum4, baum5, baum6, baum7, baum8, baum9, 
-    baum10, baum11, baum12, baum13, baum14, baum15, baum16;
     Auto auto;
     GLTastatur tastatur;
     double geschwindigkeit;
